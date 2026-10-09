@@ -107,6 +107,6 @@ params = {
         'passenger_count': passenger
 }
 
-r = requests.get(url_mine, params=params)
+r = requests.get(url, params=params)
 
 st.success(f"Estimated fare : {r.json()['fare']:.2f} $")
